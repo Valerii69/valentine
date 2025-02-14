@@ -1,12 +1,13 @@
+import { VideoContent } from "./VideoContent";
 const phrases = [
- "Ні?",
-  "Будь ласка, будь моїм Валентином",
-  "Ти мені потрібен",
-  "Я засмучуся, якщо ти скажеш Ні",
+  "В тебе немає варіантів!",
+  "Будь ласка, будь моєю..",
+  "Ти мені потрібна",
+  "Я засмучуюсь, коли ти кажеш 'Ні'",
   "Чому ти так зі мною чиниш?",
-  "Я заплачу, якщо ти скажеш Ні...",
+  "Я заплачу, якщо ти скажеш 'Ні'...",
   "Хто, якщо не Ти?",
-  "Ти розіб'єш мені серце",
+  "Ти розбиваєш мені серце",
 ];
 
 type NoContentProps = {
@@ -14,43 +15,20 @@ type NoContentProps = {
 };
 
 export const NoContent = ({ noCount }: NoContentProps) => {
-  const getNoButtonPhrase = () => {
-    return phrases[noCount % phrases.length];
-  };
+  const isInitial = noCount === 0;
+  const phrase = phrases[noCount % phrases.length];
+  const videoSrc = isInitial
+    ? "video/main.mp4"
+    : `video/${(noCount % phrases.length) + 1}.mp4`;
 
   return (
     <div className="content">
-      {!noCount ? (
-        <video
-          key={noCount}
-          playsInline
-          autoPlay
-          loop
-          muted
-          width="200px"
-          height="200px"
-        >
-          <source src="video/main.mp4" type="video/mp4" />
-        </video>
-      ) : (
-        <>
-          <video
-            key={noCount}
-            playsInline
-            autoPlay
-            loop
-            muted
-            width="200px"
-            height="200px"
-          >
-            <source
-              src={`video/${(noCount % phrases.length) + 1}.mp4`}
-              type="video/mp4"
-            />
-          </video>
-          <p>{getNoButtonPhrase()}</p>
-        </>
-      )}
+      <VideoContent
+        src={videoSrc}
+        width={isInitial ? 150 : 200}
+        height={isInitial ? 150 : 200}
+      />
+      {!isInitial && <p>{phrase}</p>}
     </div>
   );
 };

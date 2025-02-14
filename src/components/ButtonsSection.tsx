@@ -3,7 +3,7 @@ import { useState, Dispatch, SetStateAction, CSSProperties } from "react";
 const MAX_BUTTON_SIZE = 204;
 const START_BUTTON_SIZE = 60;
 const START_NO_BUTTON_POSITION = {
-  left: 50,
+  left: 100,
   top: 100,
 };
 const EXPEND_BUTTON_SIZE = 4;

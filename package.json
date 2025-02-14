@@ -26,7 +26,6 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   },
-  "description": "Click the 'Yes' button to accept my invitation to be my Valentine.",
   "main": "index.js",
   "author": "",
   "license": "ISC"
