@@ -1,8 +1,4 @@
-export const VideoContent = ({
-  src,
-  width,
-  height,
-}: {
+export const VideoContent = ({ src, width, height,}: {
   src: string;
   width: number;
   height: number;

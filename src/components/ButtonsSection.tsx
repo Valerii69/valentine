@@ -26,11 +26,11 @@ const getNoButtonStyles = (
   top: buttonSize >= MAX_BUTTON_SIZE ? `${position.top}px` : "",
 });
 
-export const ButtonsSection = ({
+export function ButtonsSection({
   setNoCount,
   noCount,
   setYesPressed,
-}: ButtonsSectionProps) => {
+}: ButtonsSectionProps) {
   const [buttonSize, setButtonSize] = useState(START_BUTTON_SIZE);
   const [position, setPosition] = useState(START_NO_BUTTON_POSITION);
 
@@ -65,4 +65,4 @@ export const ButtonsSection = ({
       </button>
     </div>
   );
-};
+}
