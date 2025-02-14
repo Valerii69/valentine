@@ -1,12 +1,12 @@
 const phrases = [
-  "No?",
-  "Please be my Valentine",
-  "I need you",
-  "I'll be upset if you say No",
-  "Why are you doing this to me?",
-  "I'm gonna cry if you say No...",
-  "Who else if not you?",
-  "You'll break my heart",
+ "Ні?",
+  "Будь ласка, будь моїм Валентином",
+  "Ти мені потрібен",
+  "Я засмучуся, якщо ти скажеш Ні",
+  "Чому ти так зі мною чиниш?",
+  "Я заплачу, якщо ти скажеш Ні...",
+  "Хто, якщо не Ти?",
+  "Ти розіб'єш мені серце",
 ];
 
 type NoContentProps = {

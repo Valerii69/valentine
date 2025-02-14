@@ -9,7 +9,7 @@ function App() {
 
   return (
     <section>
-      <h1>{!yesPressed ? "Will you be my Valentine?" : "YOHOOOOO"}</h1>
+      <h1>{!yesPressed ? "Будеш моєю Валентинкою??" : "ЙОООООО"}</h1>
       {yesPressed ? (
         <YesContent />
       ) : (

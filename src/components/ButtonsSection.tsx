@@ -62,7 +62,7 @@ export const ButtonsSection = ({
           height: `${buttonSize}px`,
         }}
       >
-        Yes
+        Так
       </button>
       <button
         onClick={onNoHandleClick}
@@ -73,7 +73,7 @@ export const ButtonsSection = ({
         className={noButtonClassName}
         disabled={buttonSize === MAX_BUTTON_SIZE}
       >
-        No
+        Ні
       </button>
     </div>
   );
