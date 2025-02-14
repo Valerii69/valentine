@@ -12,8 +12,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* background-color: lightpink; */
-  /* background-color: lightpink; */
 }
 
 section {
@@ -23,8 +21,6 @@ section {
   background: white;
   border-radius: 50%;
   border: 5px;
-  /* border-style: double; */
-  /* border-color: lightpink; */
   padding: 10px;
   gap: 10px;
 
@@ -41,6 +37,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   color: palevioletred;
+  text-shadow: 5px 5px 5px rgb(222, 180, 194);
   @media screen and (max-width: 900px) {
     font-size: 1.5em;
   }
@@ -59,7 +56,7 @@ button {
   outline: none;
   border: 1px solid palevioletred;
   background-color: rgb(241, 234, 234);
-transition: all 500ms ease;
+  transition: all 500ms ease;
   &:disabled {
     background-color: rgb(241, 234, 234);
     cursor: default;
@@ -72,7 +69,7 @@ transition: all 500ms ease;
 }
 
 p {
- font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", cursive;
 }
 .content {
   max-height: 350px;
