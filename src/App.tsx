@@ -3,7 +3,7 @@ import { NoContent } from "./components/NoContent";
 import { YesContent } from "./components/YesContent";
 import { ButtonsSection } from "./components/ButtonsSection";
 
-function App() {
+export default function App() {
   const [noCount, setNoCount] = useState<number>(0);
   const [yesPressed, setYesPressed] = useState<boolean>(false);
 
@@ -25,5 +25,3 @@ function App() {
     </section>
   );
 }
-
-export default App;
